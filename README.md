@@ -4,7 +4,7 @@
 ## 📝 Tutorial
 EN TODO EL CODIGO DEL BOT , HABRA NOTAS - SOBRE CADA COSA 
 
-## 📝 [Support Server](https://discord.gg/eG8caHXaXR)
+## 📝 [-Discord Server-](https://discord.gg/eG8caHXaXR)
 
 
 ## 📸 CREADOR -
