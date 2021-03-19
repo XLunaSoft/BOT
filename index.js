@@ -1,18 +1,18 @@
-require("dotenv").config();//Cargando .env
+require("dotenv").config();//ESTO CARGA EL .ENV
 const fs = require("fs");
 const { Collection, Client } = require("discord.js");
 
 const client = new Client();
 client.commands = new Collection();
 
-//Logging in to discord
+//VE A .ENV Y PON TU TOKEN/PREFIX RECOMIENDO DEJAR UN ESPACIO EN EL PREFIX ASI COMO ESTA SOLO CAMBIA EL SIGNO
 client.login(process.env.TOKEN)
 
 client.config = {
   prefix: process.env.PREFIX,
 }
 
-//Status
+//ESTADO DEL BOT
 
 client.on("ready", () => {
   client.user.setPresence({
@@ -24,7 +24,7 @@ client.on("ready", () => {
   }); 
 });
 
-//Loading Events
+//Eventos
 fs.readdir(__dirname + "/events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach((file) => {
@@ -35,7 +35,7 @@ fs.readdir(__dirname + "/events/", (err, files) => {
   });
 });
 
-//Loading Commands
+//ESTO TE AYUDARA PARA SABER SI LOS COMANDOS ESTAN BIEN O TIENEN ALGUN ERROR
 fs.readdir("./comandos/", (err, files) => {
   if (err) return console.error(err);
   files.forEach((file) => {
