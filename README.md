@@ -1,2 +1,0 @@
-# BOT
-ESPERO Y LES FUNCIONE ...🥰
